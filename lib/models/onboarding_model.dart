@@ -1,21 +1,21 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter/material.dart';
 import 'package:flutter_chatgpt_app/configs/assets.dart';
-import 'package:flutter_chatgpt_app/features/onboarding/presentation/widgets/welcome_to_chat_gpt.dart';
 
 class OnboardingModel {
   final String imageAsset;
-  final Widget infoWidget;
+  final String text;
   OnboardingModel({
     required this.imageAsset,
-    required this.infoWidget,
+    required this.text,
   });
 }
 
 List<OnboardingModel> onboardingItems = [
   OnboardingModel(
-      imageAsset: AppAssets.hello, infoWidget: const WelcomeToChatGpt()),
+      imageAsset: AppAssets.hello, text: 'Welcome To Flutter Chat Gpt'),
   OnboardingModel(
       imageAsset: AppAssets.laptop,
-      infoWidget: Text('With the use of An\nUnofficial Open AI package'))
+      text: 'With the use of An Unofficial Open AI package'),
+  OnboardingModel(
+      imageAsset: AppAssets.love, text: 'Please Follow me\nthanks 🥹💙')
 ];

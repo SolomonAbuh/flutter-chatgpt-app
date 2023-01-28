@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_chatgpt_app/features/onboarding/domain/entities/onboarding_model.dart';
+import 'package:flutter_chatgpt_app/models/onboarding_model.dart';
 
 class OnboardingItem extends StatelessWidget {
   final OnboardingModel onboardingModel;
@@ -35,7 +35,16 @@ class OnboardingItem extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        Center(child: onboardingModel.infoWidget),
+        Center(
+          child: Text(
+            onboardingModel.text,
+            style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.w700,
+                color: Colors.brown[700]),
+            textAlign: TextAlign.center,
+          ),
+        ),
       ],
     );
   }
