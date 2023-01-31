@@ -17,5 +17,5 @@ List<OnboardingModel> onboardingItems = [
       imageAsset: AppAssets.laptop,
       text: 'With the use of An Unofficial Open AI package'),
   OnboardingModel(
-      imageAsset: AppAssets.love, text: 'Please Follow me\nthanks 🥹💙')
+      imageAsset: AppAssets.love, text: 'Please Follow Me\nThanks 🥹💙')
 ];

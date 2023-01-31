@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chatgpt_app/models/onboarding_model.dart';
 
+import '../../../../configs/app_colors.dart';
+
 class OnboardingItem extends StatelessWidget {
   final OnboardingModel onboardingModel;
   const OnboardingItem({super.key, required this.onboardingModel});
@@ -18,7 +20,7 @@ class OnboardingItem extends StatelessWidget {
                 height: 300,
                 width: 300,
                 decoration: const BoxDecoration(
-                    color: Color(0xFF6FA3A3),
+                    color: AppColors.primaryColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(300),
                       topRight: Radius.circular(300),

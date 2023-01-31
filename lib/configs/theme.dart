@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'app_colors.dart';
 
 class AppTheme {
@@ -13,4 +12,10 @@ class AppTheme {
           statusBarBrightness: Brightness.light,
         ),
       ));
+
+  static const TextStyle headerTextStyle = TextStyle(
+    fontSize: 40,
+    fontWeight: FontWeight.w700,
+    color: AppColors.textColor,
+  );
 }
